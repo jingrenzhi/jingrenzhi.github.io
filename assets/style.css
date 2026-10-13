@@ -129,10 +129,12 @@ address { font-style: normal; }
 .page-head .role { color: var(--muted); margin: 0; }
 
 /* ---------- Publication tabs ---------- */
-.pub-tabs { display: flex; gap: 4px; margin: 0 0 4px; border-bottom: 1px solid var(--rule); }
+.pub-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 20px; margin-bottom: 4px; }
+.pub-head h2 { margin: 0; }
+.pub-tabs { display: flex; gap: 2px; }
 .pub-tabs button {
   font: inherit; color: var(--muted); background: none; border: 0; cursor: pointer;
-  padding: 6px 16px; border-bottom: 2px solid transparent; margin-bottom: -1px;
+  padding: 3px 10px; border-bottom: 2px solid transparent;
 }
 .pub-tabs button:hover { color: var(--link-hover); }
 .pub-tabs button[aria-selected="true"] { color: var(--text); font-weight: 700; border-bottom-color: var(--link); }
