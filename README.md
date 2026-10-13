@@ -5,8 +5,8 @@
 ## 目录结构
 
 ```
-index.html          主页（简介、研究方向、新闻、论文、联系方式）
-cv.html             CV 页（经历、教育、奖项、教学与指导、学术服务）
+index.html          主页（简介、研究方向、论文、联系方式）
+cv.html             CV 页（新闻、经历、教育、奖项、教学与指导、学术服务）
 assets/style.css    样式（Jon Barron 式极简单栏；深色模式跟随系统，含移动端适配）
 assets/photo.svg    头像占位图
 assets/favicon.svg  浏览器标签页图标
