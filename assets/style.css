@@ -148,11 +148,11 @@ address { font-style: normal; }
 
 /* ---------- Venue badge ---------- */
 .badge {
-  display: inline-block; padding: 1px 8px; margin-right: 6px;
-  font-size: 12px; font-weight: 700; line-height: 1.6; letter-spacing: 0.02em;
-  color: #fff; background: #1d4f91; border-radius: 3px; white-space: nowrap;
-  vertical-align: 1px;
+  display: inline-block; padding: 0 6px; margin-right: 6px;
+  font-size: 11px; font-weight: 700; line-height: 1.6; letter-spacing: 0.02em;
+  color: #3d5a80; background: #e9eef5; border-radius: 3px; white-space: nowrap;
+  vertical-align: 2px;
 }
 @media (prefers-color-scheme: dark) {
-  .badge { background: #2f5f9e; }
+  .badge { color: #a9c1e0; background: #232b36; }
 }
