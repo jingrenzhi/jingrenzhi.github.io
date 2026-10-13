@@ -158,7 +158,7 @@ address { font-style: normal; }
 }
 
 /* ---------- Award / note line ---------- */
-.pub-note { color: #d0312d; font-weight: 700; }
+.pub-note { color: #8c2f39; font-weight: 700; }
 @media (prefers-color-scheme: dark) {
-  .pub-note { color: #ff7b72; }
+  .pub-note { color: #e3959b; }
 }
