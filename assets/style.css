@@ -127,3 +127,19 @@ address { font-style: normal; }
 .page-head h1 { font-size: 34px; font-weight: 400; margin: 0 0 4px; }
 .page-head h1 a { color: var(--text); }
 .page-head .role { color: var(--muted); margin: 0; }
+
+/* ---------- Publication tabs ---------- */
+.pub-tabs { display: flex; gap: 4px; margin: 0 0 4px; border-bottom: 1px solid var(--rule); }
+.pub-tabs button {
+  font: inherit; color: var(--muted); background: none; border: 0; cursor: pointer;
+  padding: 6px 16px; border-bottom: 2px solid transparent; margin-bottom: -1px;
+}
+.pub-tabs button:hover { color: var(--link-hover); }
+.pub-tabs button[aria-selected="true"] { color: var(--text); font-weight: 700; border-bottom-color: var(--link); }
+.pub-tabs button:focus-visible { outline: 2px solid var(--link); outline-offset: -2px; }
+
+.pub-year { font-size: 17px; font-weight: 700; margin: 20px 0 4px; }
+#pub-list[data-view="highlighted"] .pub-year,
+#pub-list[data-view="highlighted"] .pub:not(.highlight) { display: none; }
+#pub-list[data-view="highlighted"] .pub.highlight { background: none; }
+#pub-list[data-view="highlighted"] { padding-top: 8px; }

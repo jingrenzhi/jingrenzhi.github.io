@@ -98,8 +98,13 @@
       <!-- Figures go in assets/pubs/ (about 640x400px, jpg/png/gif); change each src below.
            Delete the <img> line for a paper without a figure.
            Add or remove the "highlight" class on a <li class="pub"> to highlight a paper. -->
-      <h3 class="year">Papers</h3>
-      <p class="note">Representative papers are highlighted.</p>
+      <div class="pub-tabs" role="tablist" aria-label="Publication views">
+        <button type="button" role="tab" aria-selected="true" data-view="year">By year</button>
+        <button type="button" role="tab" aria-selected="false" data-view="highlighted">Highlighted</button>
+      </div>
+
+      <div id="pub-list" data-view="year">
+      <h3 class="pub-year">2026</h3>
       <ol class="pubs">
         <li class="pub">
           <img class="pub-img" src="assets/pubs/placeholder.svg" alt="" width="320" height="200" loading="lazy">
@@ -117,6 +122,9 @@
             <p class="pub-venue"><em>Proceedings of the National Academy of Sciences</em></p>
           </div>
         </li>
+      </ol>
+      <h3 class="pub-year">2025</h3>
+      <ol class="pubs">
         <li class="pub">
           <img class="pub-img" src="assets/pubs/placeholder.svg" alt="" width="320" height="200" loading="lazy">
           <div class="pub-body">
@@ -149,6 +157,9 @@
             <p class="pub-venue"><em>Proceedings of the National Academy of Sciences</em> 122 (18), e2413962122, 2025</p>
           </div>
         </li>
+      </ol>
+      <h3 class="pub-year">2024</h3>
+      <ol class="pubs">
         <li class="pub highlight">
           <img class="pub-img" src="assets/pubs/placeholder.svg" alt="" width="320" height="200" loading="lazy">
           <div class="pub-body">
@@ -165,6 +176,9 @@
             <p class="pub-venue"><em>Journal of Climate</em>, 2024</p>
           </div>
         </li>
+      </ol>
+      <h3 class="pub-year">2023</h3>
+      <ol class="pubs">
         <li class="pub highlight">
           <img class="pub-img" src="assets/pubs/placeholder.svg" alt="" width="320" height="200" loading="lazy">
           <div class="pub-body">
@@ -173,6 +187,9 @@
             <p class="pub-venue"><em>Nature</em>, 2023</p>
           </div>
         </li>
+      </ol>
+      <h3 class="pub-year">2022</h3>
+      <ol class="pubs">
         <li class="pub">
           <img class="pub-img" src="assets/pubs/placeholder.svg" alt="" width="320" height="200" loading="lazy">
           <div class="pub-body">
@@ -189,6 +206,9 @@
             <p class="pub-venue"><em>Journal of Wind Engineering and Industrial Aerodynamics</em> 228, 105119, 2022</p>
           </div>
         </li>
+      </ol>
+      <h3 class="pub-year">2021</h3>
+      <ol class="pubs">
         <li class="pub">
           <img class="pub-img" src="assets/pubs/placeholder.svg" alt="" width="320" height="200" loading="lazy">
           <div class="pub-body">
@@ -205,6 +225,9 @@
             <p class="pub-venue"><em>Journal of Climate</em> 34 (23), 9349–9364, 2021</p>
           </div>
         </li>
+      </ol>
+      <h3 class="pub-year">2020</h3>
+      <ol class="pubs">
         <li class="pub">
           <img class="pub-img" src="assets/pubs/placeholder.svg" alt="" width="320" height="200" loading="lazy">
           <div class="pub-body">
@@ -213,6 +236,9 @@
             <p class="pub-venue"><em>Journal of Advances in Modeling Earth Systems</em> 12 (3), e2019MS001975, 2020</p>
           </div>
         </li>
+      </ol>
+      <h3 class="pub-year">2019</h3>
+      <ol class="pubs">
         <li class="pub">
           <img class="pub-img" src="assets/pubs/placeholder.svg" alt="" width="320" height="200" loading="lazy">
           <div class="pub-body">
@@ -221,6 +247,9 @@
             <p class="pub-venue"><em>Journal of Climate</em> 32 (22), 7837–7855, 2019</p>
           </div>
         </li>
+      </ol>
+      <h3 class="pub-year">2017</h3>
+      <ol class="pubs">
         <li class="pub">
           <img class="pub-img" src="assets/pubs/placeholder.svg" alt="" width="320" height="200" loading="lazy">
           <div class="pub-body">
@@ -230,6 +259,7 @@
           </div>
         </li>
       </ol>
+      </div>
 
       <h3 class="year">Patent</h3>
       <ul class="plain">
@@ -253,6 +283,15 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    // Publication tabs: "By year" shows everything, "Highlighted" only the highlighted papers.
+    document.querySelectorAll('.pub-tabs button').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.getElementById('pub-list').setAttribute('data-view', btn.dataset.view);
+        document.querySelectorAll('.pub-tabs button').forEach(function (b) {
+          b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
+        });
+      });
+    });
   </script>
 </body>
 </html>
