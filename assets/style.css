@@ -54,7 +54,7 @@ h2 { font-size: 23px; font-weight: 400; margin: 0 0 12px; }
 /* ---------- About ---------- */
 .about { display: flex; gap: 36px; align-items: center; padding-top: 44px; }
 .about-text { flex: 1; min-width: 0; }
-.about h1 { font-size: 34px; font-weight: 400; text-align: center; margin: 0 0 4px; }
+.about h1 { font-size: 34px; font-weight: 400; text-align: center; margin: 0 0 18px; }
 .role { text-align: center; color: var(--muted); margin-bottom: 18px; }
 
 .photo {
