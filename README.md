@@ -6,7 +6,7 @@
 
 ```
 index.html          页面全部内容（简介、研究方向、新闻、论文、教学、联系方式）
-assets/style.css    样式（含深色模式、移动端适配、打印样式）
+assets/style.css    样式（Jon Barron 式极简单栏；深色模式跟随系统，含移动端适配）
 assets/photo.svg    头像占位图
 assets/favicon.svg  浏览器标签页图标
 files/              放 CV 等可下载文件（如 files/cv.pdf）
@@ -22,7 +22,7 @@ files/              放 CV 等可下载文件（如 files/cv.pdf）
 - **论文**：复制一个 `<li class="pub">...</li>` 块并修改；自己的名字用 `<strong>` 包起来。
 - **论文配图**：把图放进 `assets/pubs/`（建议约 640×400、8:5 比例，jpg/png/gif 均可），并把该论文 `<img class="pub-img">` 的 `src` 改成对应文件；没有图的论文删掉这一行 `<img>` 即可。
 - **新闻**：在 `<ul class="news">` 顶部加一行 `<li>`。
-- **主题色**：改 `assets/style.css` 顶部的 `--accent`。
+- **链接颜色 / 悬停高亮色**：改 `assets/style.css` 顶部的 `--link` 和 `--highlight`。
 
 ## 本地预览
 
