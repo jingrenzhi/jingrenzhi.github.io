@@ -143,7 +143,7 @@ address { font-style: normal; }
 .pub-year { font-size: 17px; font-weight: 700; margin: 20px 0 4px; }
 #pub-list[data-view="highlighted"] .pub-year,
 #pub-list[data-view="highlighted"] .pub:not(.highlight) { display: none; }
-#pub-list[data-view="highlighted"] .pub.highlight { background: none; }
+#pub-list[data-view="highlighted"] .pub.highlight { margin-bottom: 8px; }
 #pub-list[data-view="highlighted"] { padding-top: 8px; }
 
 /* ---------- Venue badge ---------- */
