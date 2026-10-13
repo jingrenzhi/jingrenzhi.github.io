@@ -5,7 +5,8 @@
 ## 目录结构
 
 ```
-index.html          页面全部内容（简介、研究方向、新闻、论文、教学、联系方式）
+index.html          主页（简介、研究方向、新闻、论文、联系方式）
+cv.html             CV 页（经历、教育、奖项、教学与指导、学术服务）
 assets/style.css    样式（Jon Barron 式极简单栏；深色模式跟随系统，含移动端适配）
 assets/photo.svg    头像占位图
 assets/favicon.svg  浏览器标签页图标
@@ -15,7 +16,7 @@ files/              放 CV 等可下载文件（如 files/cv.pdf）
 
 ## 如何修改内容
 
-所有内容都在 `index.html` 里，搜索 `TODO` 和方括号 `[...]` 即可找到需要替换的占位内容。
+内容在 `index.html` 和 `cv.html` 里，搜索 `TODO` 和方括号 `[...]` 即可找到需要替换的占位内容。
 
 - **头像**：把照片存为 `assets/photo.jpg`，并将 `index.html` 中的 `assets/photo.svg` 改成 `assets/photo.jpg`。
 - **CV**：把 PDF 存为 `files/cv.pdf`。
