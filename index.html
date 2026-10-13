@@ -81,9 +81,8 @@
     <section id="publications">
       <div class="pub-head">
         <h2>Publications</h2>
-        <div class="pub-tabs" role="tablist" aria-label="Publication views">
-          <button type="button" role="tab" aria-selected="true" data-view="year">By year</button>
-          <button type="button" role="tab" aria-selected="false" data-view="highlighted">Highlighted</button>
+        <div class="pub-tabs">
+          <button type="button" aria-pressed="false" id="pub-toggle">Highlighted</button>
         </div>
       </div>
 
@@ -270,14 +269,11 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    // Publication tabs: "By year" shows everything, "Highlighted" only the highlighted papers.
-    document.querySelectorAll('.pub-tabs button').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        document.getElementById('pub-list').setAttribute('data-view', btn.dataset.view);
-        document.querySelectorAll('.pub-tabs button').forEach(function (b) {
-          b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
-        });
-      });
+    // "Highlighted" toggles between all papers (by year) and only the highlighted ones.
+    document.getElementById('pub-toggle').addEventListener('click', function () {
+      var on = this.getAttribute('aria-pressed') !== 'true';
+      this.setAttribute('aria-pressed', on ? 'true' : 'false');
+      document.getElementById('pub-list').setAttribute('data-view', on ? 'highlighted' : 'year');
     });
   </script>
 </body>

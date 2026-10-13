@@ -137,7 +137,7 @@ address { font-style: normal; }
   padding: 3px 10px; border-bottom: 2px solid transparent;
 }
 .pub-tabs button:hover { color: var(--link-hover); }
-.pub-tabs button[aria-selected="true"] { color: var(--text); font-weight: 700; border-bottom-color: var(--link); }
+.pub-tabs button[aria-pressed="true"] { color: var(--text); font-weight: 700; border-bottom-color: var(--link); }
 .pub-tabs button:focus-visible { outline: 2px solid var(--link); outline-offset: -2px; }
 
 .pub-year { font-size: 17px; font-weight: 700; margin: 20px 0 4px; }
