@@ -1,1 +1,188 @@
-Hello World
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Renzhi Jing</title>
+  <meta name="description" content="Renzhi Jing — academic homepage: research, publications, teaching, and contact.">
+  <meta name="author" content="Renzhi Jing">
+  <meta property="og:title" content="Renzhi Jing">
+  <meta property="og:description" content="Academic homepage: research, publications, teaching, and contact.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jingrenzhi.github.io/">
+  <link rel="canonical" href="https://jingrenzhi.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    // Apply the saved theme before first paint to avoid a flash.
+    try {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="nav-name" href="#top">Renzhi Jing</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="files/cv.pdf">CV</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-.5 0-.9-.1-1.4A7 7 0 0 1 12 3z" fill="currentColor"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="about">
+      <div class="about-text">
+        <h1>Renzhi Jing</h1>
+        <!-- TODO: position / department / institution -->
+        <p class="role">Position · Department<br>University Name</p>
+
+        <!-- TODO: 2–3 sentence bio -->
+        <p>
+          I study <strong>[your research area]</strong>, with a focus on
+          [topic one], [topic two], and [topic three]. My work combines
+          [methods] to understand [the big question you care about].
+        </p>
+        <p>
+          Previously, I received my Ph.D. from [University] and my B.S. from
+          [University]. I am always happy to hear from prospective students
+          and collaborators — feel free to get in touch.
+        </p>
+
+        <ul class="links">
+          <!-- TODO: replace the href values; delete any you don't use -->
+          <li><a href="mailto:your.name@university.edu">Email</a></li>
+          <li><a href="https://scholar.google.com/">Google Scholar</a></li>
+          <li><a href="https://github.com/jingrenzhi">GitHub</a></li>
+          <li><a href="https://orcid.org/">ORCID</a></li>
+          <li><a href="files/cv.pdf">CV</a></li>
+        </ul>
+      </div>
+
+      <!-- TODO: put your photo at assets/photo.jpg and change src below -->
+      <img class="photo" src="assets/photo.svg" alt="Portrait of Renzhi Jing" width="200" height="200">
+    </section>
+
+    <!-- ============ RESEARCH INTERESTS ============ -->
+    <section id="research">
+      <h2>Research Interests</h2>
+      <ul class="interests">
+        <li>
+          <h3>[Research theme one]</h3>
+          <p>One or two sentences on the question you ask and why it matters.</p>
+        </li>
+        <li>
+          <h3>[Research theme two]</h3>
+          <p>One or two sentences on the question you ask and why it matters.</p>
+        </li>
+        <li>
+          <h3>[Research theme three]</h3>
+          <p>One or two sentences on the question you ask and why it matters.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ NEWS ============ -->
+    <section id="news">
+      <h2>News</h2>
+      <ul class="news">
+        <li><time datetime="2026-10">Oct 2026</time><span>New homepage is live.</span></li>
+        <li><time datetime="2026-09">Sep 2026</time><span>[Paper title] accepted at [Venue].</span></li>
+        <li><time datetime="2026-06">Jun 2026</time><span>Gave a talk on [topic] at [Institution].</span></li>
+      </ul>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section id="publications">
+      <h2>Publications</h2>
+      <p class="note">See <a href="https://scholar.google.com/">Google Scholar</a> for a complete list. <sup>*</sup> denotes equal contribution.</p>
+
+      <!-- Copy one <li class="pub"> block per paper. Wrap your own name in <strong>. -->
+      <h3 class="year">2026</h3>
+      <ol class="pubs">
+        <li class="pub">
+          <p class="pub-title">Title of Your Most Recent Paper</p>
+          <p class="pub-authors"><strong>Renzhi Jing</strong>, Coauthor One, Coauthor Two</p>
+          <p class="pub-venue"><em>Journal or Conference Name</em>, 2026</p>
+          <p class="pub-links">
+            <a href="#">Paper</a>
+            <a href="#">PDF</a>
+            <a href="#">Code</a>
+            <a href="#">Data</a>
+          </p>
+        </li>
+        <li class="pub">
+          <p class="pub-title">Title of Another Paper</p>
+          <p class="pub-authors">Coauthor One<sup>*</sup>, <strong>Renzhi Jing</strong><sup>*</sup>, Coauthor Two</p>
+          <p class="pub-venue"><em>Journal or Conference Name</em>, 2026</p>
+          <p class="pub-links">
+            <a href="#">Paper</a>
+            <a href="#">PDF</a>
+          </p>
+        </li>
+      </ol>
+
+      <h3 class="year">2025</h3>
+      <ol class="pubs">
+        <li class="pub">
+          <p class="pub-title">Title of an Earlier Paper</p>
+          <p class="pub-authors"><strong>Renzhi Jing</strong>, Coauthor One</p>
+          <p class="pub-venue"><em>Journal or Conference Name</em>, 2025</p>
+          <p class="pub-links">
+            <a href="#">Paper</a>
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ TEACHING ============ -->
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <ul class="plain">
+        <li><strong>[Course number] [Course title]</strong> — Instructor, [University], Fall 2026</li>
+        <li><strong>[Course number] [Course title]</strong> — Teaching Assistant, [University], Spring 2025</li>
+      </ul>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <address>
+        <a href="mailto:your.name@university.edu">your.name@university.edu</a><br>
+        Office [room], [Building]<br>
+        [Department], [University]<br>
+        [City, State/Province, Postal code]
+      </address>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Renzhi Jing · Hosted on <a href="https://github.com/jingrenzhi/jingrenzhi.github.io">GitHub Pages</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelector('.theme-toggle').addEventListener('click', function () {
+      var root = document.documentElement;
+      var current = root.getAttribute('data-theme') ||
+        (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  </script>
+</body>
+</html>
