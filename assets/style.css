@@ -145,3 +145,15 @@ address { font-style: normal; }
 #pub-list[data-view="highlighted"] .pub:not(.highlight) { display: none; }
 #pub-list[data-view="highlighted"] .pub.highlight { background: none; }
 #pub-list[data-view="highlighted"] { padding-top: 8px; }
+
+/* ---------- Venue badge ---------- */
+.pub-venue { margin-top: 5px !important; }
+.badge {
+  display: inline-block; padding: 1px 8px; margin-right: 6px;
+  font-size: 12px; font-weight: 700; line-height: 1.6; letter-spacing: 0.02em;
+  color: #fff; background: #1d4f91; border-radius: 3px; white-space: nowrap;
+}
+.venue-detail { color: var(--muted); font-size: 14px; }
+@media (prefers-color-scheme: dark) {
+  .badge { background: #2f5f9e; }
+}
