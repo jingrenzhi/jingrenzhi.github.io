@@ -156,3 +156,9 @@ address { font-style: normal; }
 @media (prefers-color-scheme: dark) {
   .badge { color: #a9c1e0; background: #232b36; }
 }
+
+/* ---------- Award / note line ---------- */
+.pub-note { color: #d0312d; }
+@media (prefers-color-scheme: dark) {
+  .pub-note { color: #ff7b72; }
+}
