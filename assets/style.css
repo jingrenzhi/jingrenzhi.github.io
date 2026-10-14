@@ -168,4 +168,6 @@ address { font-style: normal; }
 section { scroll-margin-top: 48px; }
 
 /* ---------- Contact line under the bio ---------- */
-.contact-line { margin: 0; }
+.contact-line { display: flex; gap: 22px; margin: 4px 0 0; }
+.contact-line a { display: inline-flex; align-items: center; gap: 6px; }
+.contact-line svg { flex: none; }
