@@ -106,13 +106,10 @@ address { font-style: normal; }
   .news li { flex-direction: column; gap: 0; padding: 5px 0; }
   .pub { flex-direction: column; align-items: flex-start; gap: 10px; }
   .pub-img { width: 100%; max-width: 320px; }
-  /* One row on phones: section links scroll sideways, contact icons stay at the right. */
-  nav.tabs { flex-wrap: nowrap; gap: 12px; }
-  .tabs .nav-sections { flex: 1; min-width: 0; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; white-space: nowrap; margin-left: -9px; }
+  /* One row on phones: section links scroll sideways. */
+  .tabs .nav-sections { flex: 1; min-width: 0; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; white-space: nowrap; justify-content: flex-start; margin: 0 -9px; }
   .nav-sections::-webkit-scrollbar { display: none; }
   .tabs .nav-sections a { padding: 0 9px; }
-  .tabs .nav-contact span { display: none; }
-  .tabs .nav-contact { gap: 12px; flex: none; }
   main section { scroll-margin-top: 52px; }
 }
 
@@ -160,16 +157,17 @@ address { font-style: normal; }
 /* ---------- Section links ---------- */
 .tabs {
   position: sticky; top: 0; z-index: 10;
-  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px 16px;
+  display: flex; justify-content: center;
   margin: 20px -20px 4px; padding: 10px 20px;
   font-size: 14px; background: var(--bg); border-bottom: 1px solid var(--rule);
 }
-.nav-sections { display: flex; flex-wrap: wrap; gap: 4px 0; margin-left: -12px; }
+.nav-sections { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 0; }
 .nav-sections a { color: var(--muted); padding: 0 12px; }
 .nav-sections a + a { border-left: 1px solid var(--rule); }
 .nav-sections a:hover { color: var(--link-hover); }
-.nav-contact { display: flex; gap: 16px; }
-.nav-contact a { display: inline-flex; align-items: center; gap: 5px; color: var(--text); }
-.nav-contact a:hover { color: var(--link); }
-.nav-contact svg { flex: none; }
 section { scroll-margin-top: 48px; }
+
+/* ---------- Contact ---------- */
+.contact { list-style: none; padding: 0; margin: 0; }
+.contact li { display: flex; align-items: center; gap: 8px; padding: 3px 0; }
+.contact svg { flex: none; color: var(--muted); }
