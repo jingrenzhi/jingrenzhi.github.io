@@ -151,3 +151,17 @@ address { font-style: normal; }
 @media (prefers-color-scheme: dark) {
   .pub-note { color: #ff8a94; }
 }
+
+/* ---------- Section tabs ---------- */
+.tabs { display: none; flex-wrap: wrap; justify-content: center; gap: 0 2px; margin: 18px 0 8px; border-bottom: 1px solid var(--rule); }
+.has-tabs .tabs { display: flex; }
+.tabs button {
+  font: inherit; color: var(--muted); background: none; border: 0; cursor: pointer;
+  padding: 7px 14px; border-bottom: 2px solid transparent; margin-bottom: -1px;
+}
+.tabs button:hover { color: var(--link-hover); }
+.tabs button[aria-selected="true"] { color: var(--text); font-weight: 700; border-bottom-color: var(--link); }
+.tabs button:focus-visible { outline: 2px solid var(--link); outline-offset: -2px; }
+/* The tab already names the section, so its heading is redundant. */
+.has-tabs main > section > h2, .has-tabs .pub-head h2 { display: none; }
+.has-tabs .pub-tabs { margin-left: -10px; }
