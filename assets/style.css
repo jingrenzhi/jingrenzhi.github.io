@@ -109,6 +109,8 @@ address { font-style: normal; }
   .news li { flex-direction: column; gap: 0; padding: 5px 0; }
   .pub { flex-direction: column; align-items: flex-start; gap: 10px; }
   .pub-img { width: 100%; max-width: 320px; }
+  .tabs a { padding: 0 9px; }
+  section { scroll-margin-top: 72px; }
 }
 
 @media print {
@@ -153,7 +155,13 @@ address { font-style: normal; }
 }
 
 /* ---------- Section links ---------- */
-.tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 0 2px; margin: 18px 0 8px; border-bottom: 1px solid var(--rule); }
-.tabs a { color: var(--muted); padding: 7px 14px; border-bottom: 2px solid transparent; margin-bottom: -1px; }
-.tabs a:hover { color: var(--link-hover); border-bottom-color: var(--link-hover); }
-section { scroll-margin-top: 12px; }
+.tabs {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 0;
+  margin: 20px -20px 4px; padding: 10px 20px;
+  font-size: 14px; background: var(--bg); border-bottom: 1px solid var(--rule);
+}
+.tabs a { color: var(--muted); padding: 0 12px; }
+.tabs a + a { border-left: 1px solid var(--rule); }
+.tabs a:hover { color: var(--link-hover); }
+section { scroll-margin-top: 48px; }
