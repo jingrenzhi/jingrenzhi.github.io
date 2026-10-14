@@ -58,14 +58,14 @@
     </section>
 
     <!-- ============ SECTION TABS ============ -->
-    <nav class="tabs" role="tablist" aria-label="Sections">
-      <button type="button" role="tab" aria-selected="true" data-target="publications">Publications</button>
-      <button type="button" role="tab" aria-selected="false" data-target="news">News</button>
-      <button type="button" role="tab" aria-selected="false" data-target="experience">Experience</button>
-      <button type="button" role="tab" aria-selected="false" data-target="education">Education</button>
-      <button type="button" role="tab" aria-selected="false" data-target="awards">Awards</button>
-      <button type="button" role="tab" aria-selected="false" data-target="teaching">Teaching</button>
-      <button type="button" role="tab" aria-selected="false" data-target="service">Service</button>
+    <nav class="tabs" aria-label="Sections">
+      <a href="#publications">Publications</a>
+      <a href="#news">News</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#awards">Awards</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#service">Service</a>
     </nav>
 
     <!-- ============ PUBLICATIONS ============ -->
@@ -337,26 +337,6 @@
         });
       });
     });
-    // Section tabs: show one section at a time. Without JavaScript every section stays visible.
-    (function () {
-      var tabs = Array.prototype.slice.call(document.querySelectorAll('.tabs button'));
-      function show(id) {
-        tabs.forEach(function (t) {
-          var on = t.dataset.target === id;
-          t.setAttribute('aria-selected', on ? 'true' : 'false');
-          document.getElementById(t.dataset.target).hidden = !on;
-        });
-      }
-      tabs.forEach(function (t) {
-        t.addEventListener('click', function () {
-          show(t.dataset.target);
-          try { history.replaceState(null, '', '#' + t.dataset.target); } catch (e) {}
-        });
-      });
-      var start = location.hash.slice(1);
-      document.documentElement.classList.add('has-tabs');
-      show(tabs.some(function (t) { return t.dataset.target === start; }) ? start : 'publications');
-    })();
   </script>
 </body>
 </html>
