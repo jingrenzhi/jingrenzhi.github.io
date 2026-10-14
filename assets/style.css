@@ -66,11 +66,6 @@ h2 { font-size: 23px; font-weight: 400; margin: 0 0 12px; }
 .links li { display: inline; }
 .links li + li::before { content: "/\00a0"; color: var(--text); }
 
-/* ---------- Research interests ---------- */
-.interests { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.interests h3 { font-size: 15px; font-weight: 700; margin: 0 0 4px; }
-.interests p { margin: 0; color: var(--muted); font-size: 14px; }
-
 /* ---------- Dated lists (news, experience, awards, teaching) ---------- */
 .news { list-style: none; padding: 0; margin: 0; }
 .news li { display: flex; gap: 16px; padding: 3px 0; }
@@ -111,7 +106,6 @@ address { font-style: normal; }
 @media (max-width: 640px) {
   .about { flex-direction: column-reverse; gap: 20px; padding-top: 28px; }
   .photo { width: 170px; height: 170px; }
-  .interests { grid-template-columns: 1fr; gap: 12px; }
   .news li { flex-direction: column; gap: 0; padding: 5px 0; }
   .pub { flex-direction: column; align-items: flex-start; gap: 10px; }
   .pub-img { width: 100%; max-width: 320px; }
@@ -122,11 +116,6 @@ address { font-style: normal; }
   a { color: inherit; }
 }
 
-/* ---------- CV page header ---------- */
-.page-head { padding: 44px 0 10px; text-align: center; }
-.page-head h1 { font-size: 34px; font-weight: 400; margin: 0 0 4px; }
-.page-head h1 a { color: var(--text); }
-.page-head .role { color: var(--muted); margin: 0; }
 
 /* ---------- Publication tabs ---------- */
 .pub-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 20px; margin-bottom: 4px; }
