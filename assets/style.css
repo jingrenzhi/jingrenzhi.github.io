@@ -54,7 +54,7 @@ h2 { font-size: 23px; font-weight: 400; margin: 0 0 12px; }
 /* ---------- About ---------- */
 .about { display: flex; gap: 36px; align-items: center; padding-top: 44px; }
 .about-text { flex: 1; min-width: 0; }
-.about h1 { font-size: 34px; font-weight: 400; text-align: center; margin: 0 0 8px; }
+.about h1 { font-size: 34px; font-weight: 400; text-align: center; margin: 0 0 18px; }
 .role { text-align: center; color: var(--muted); margin-bottom: 18px; }
 
 .photo {
@@ -62,7 +62,8 @@ h2 { font-size: 23px; font-weight: 400; margin: 0 0 12px; }
   border-radius: 50%; object-fit: cover;
 }
 
-.links { list-style: none; padding: 0; margin: 0 0 22px; display: flex; justify-content: center; flex-wrap: wrap; gap: 6px 22px; font-size: 14px; }
+.photo-col { flex: none; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.links { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 6px 22px; font-size: 14px; }
 .links a { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); }
 .links a:hover { color: var(--link); }
 .links svg { flex: none; }
